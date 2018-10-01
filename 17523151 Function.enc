@@ -1,0 +1,128 @@
+#Nama : Dwi Abdul Rahman
+#NIM  : 17523151
+#---------------------------------------
+#Exercise
+#---------------------------------------
+#1
+f <- function(x) {
+fx <- sin(x)
+return(fx)
+}
+
+plot (input <- -10:10,
+      sapply(input, f),
+      type="l",
+      xlab="x",
+      ylab = "f(x)")
+#---------------------------------------
+#2
+f <- function(x){
+  result <- log(x)
+  return (result)
+}
+input <- -10:10
+plot (input ,
+      sapply(input, f),
+      type="l",
+      xlab="x",
+      ylab = "f(x)")
+#----------------------------------------
+#3
+f<- function(x){
+result <- sqrt(x)-2
+return (result)
+}
+
+input <- 4:16
+plot (input ,
+      sapply(input, f),
+      type="l",
+      xlab="x",
+      ylab = "f(x)")
+#---------------------------------------
+#4
+f <- function(x){
+  result <- sqrt(x-2)
+  return (result)
+}
+input <- 11:38
+plot (input ,
+      sapply(input, f),
+      type="l",
+      xlab="x",
+      ylab = "f(x)")
+
+
+#--------------------------------------
+#Create your own functions :
+#--------------------------------------
+#Constant Functions
+f<- function (x){
+#suppose a=10
+result <- 10
+return (result)
+}
+input <- -10:10
+plot(input, 
+     sapply (input, f),
+     type="l", xlab= "x",
+     ylab="f(x)")
+#-------------------------------------
+#Linear Functions
+#f(x) = ax + b
+f <- function (x){
+  # a=2 dan b=2
+  result<- 2*x + 2
+  return(result)
+}
+input <- 1:5
+plot (input,
+      sapply(input, f),
+      type="l", xlab="x",
+      ylab="f(x)")
+#-------------------------------------
+#Quadratic Functions
+#fx=ax^2 + bx + c
+f<- function (x){
+  #a=4 , b=3, c=2
+  result <- 4*x^2 + 3*x + 2
+  return (result)
+}
+input <- -5:10
+plot(input,
+     sapply(input, f),
+     type = "l", xlab="x",
+     ylab = "f(x)")
+#-------------------------------------
+#Polynomial Functions
+#fx=a(n)x^n + a(n???1)x^(n???1) + . . . + a1x + a0
+f <- function (x){
+  result <- x^3+x^2+x+6
+  return (result)
+}
+input <- -10:10
+plot(input,
+     sapply (input, f),
+     type ="l", xlab ="x",
+     ylab="f(x)")
+#-------------------------------------
+#Rational Functions
+#fx=px / qx
+f <- function (x){
+  result <- (1)/(2*x)
+  return (result)
+}
+input <- -10:10
+plot(input,
+     sapply (input, f),
+     type ="l", xlab ="x",
+     ylab="f(x)")
+
+
+
+
+
+
+
+
+
